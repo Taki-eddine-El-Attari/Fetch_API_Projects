@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO LIST</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="to-do.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="h1"></h1>
+      <div class="input-section">
+        <input type="text" id="input" placeholder="Entrer votre tache..." />
+        <button id="button">Ajouter</button>
+      </div>
+      <ul id="todoslist"></ul>
+    </div>
+
+    <!-- Modal structure -->
+    <div id="modal-overlay" class="modal-overlay">
+      <div id="modal-content" class="modal-content">
+        <div class="modal-header">
+          <h3>Notification</h3>
+          <button id="close-modal-btn" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p id="modal-message"></p>
+        </div>
+        <div class="modal-footer">
+          <button id="modal-ok-btn" class="btn-confirm">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="to-do.js"></script>
+  </body>
+</html>
